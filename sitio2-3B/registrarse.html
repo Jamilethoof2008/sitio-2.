@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro | Universidad de Guayaquil</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/responsiveslides.css">
+  <link rel="stylesheet" href="css/themes.css">
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
+</head>
+<body>
+
+  <header>
+      <img src="img/jamileth.png" width="450" height="200" alt="Logo Universidad">
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">INICIO</a></li>
+      <li><a href="servicios.html">SERVICIOS</a></li>
+      <li><a href="contactos.html">CONTACTOS</a></li>
+      <li><a href="registrarse.html">REGISTRARSE</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="formulario">
+      <form method="POST" action="">
+        <fieldset>
+          <legend>DATOS DE REGISTRO</legend>
+
+          <label class="etiqueta" for="cedula">Cédula:</label>
+          <input type="text" id="cedula" name="txtcedula" maxlength="10" minlength="10" required>
+
+          <label class="etiqueta" for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="txtnombre" required>
+
+          <label class="etiqueta" for="apellidos">Apellidos:</label>
+          <input type="text" id="apellidos" name="txtapellidos" required>
+
+          <label class="etiqueta" for="correo">Correo:</label>
+          <input type="email" id="correo" name="txtcorreo" required>
+
+          <label class="etiqueta" for="usuario">Usuario:</label>
+          <input type="text" id="usuario" name="txtusuario" required>
+
+          <label class="etiqueta" for="clave">Contraseña:</label>
+          <input type="password" id="clave" name="txtclave" required>
+
+          <label class="etiqueta">Estado Civil:</label>
+          <label><input type="radio" name="opEstcivil" value="Soltero" required> Soltero</label><br>
+          <label><input type="radio" name="opEstcivil" value="Casado"> Casado</label><br>
+          <label><input type="radio" name="opEstcivil" value="Divorciado"> Divorciado</label><br>
+          <label><input type="radio" name="opEstcivil" value="Unión de hecho"> Unión de hecho</label><br>
+          <label><input type="radio" name="opEstcivil" value="Viudo"> Viudo</label><br><br>
+
+          <input type="submit" name="btnEnviar" value="Guardar">
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Universidad de Guayaquil - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
